@@ -45,6 +45,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <h1>ToDo App made with REACT</h1>
       <form className="homePage" onSubmit={handleSubmit}>
         <input
           type="text"
