@@ -2,6 +2,7 @@ import "./styles.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./views/HomePage";
 import TodosPage from "./views/TodosPage";
+import { Analytics } from "@vercel/analytics/react";
 
 function Layout() {
   return (
@@ -14,6 +15,7 @@ function Layout() {
           <Route render={() => <h1>Not found!</h1>} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </div>
   );
 }
