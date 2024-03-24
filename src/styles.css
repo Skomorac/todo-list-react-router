@@ -1,0 +1,121 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full height */
+}
+
+.container {
+  background: #f8f9fa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #8f8d8d,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #8d8b8b,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 50vh;
+  margin-top: 50px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  border: solid 1px #dee2e6;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex; /* Flex for alignment */
+  align-items: center; /* Vertical alignment */
+  position: relative;
+}
+
+.checkbox {
+  margin-right: 20px;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitButton {
+  background-color: #0e5510;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Add some space */
+}
+
+.homeButton {
+  background-color: #08175a; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Add some space */
+  min-width: 100%;
+}
+
+.deleteButton {
+  background-color: #ff6347; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Add some space */
+  min-width: 100%;
+}
+
+.deleteButton:hover {
+  background-color: #d6341d; /* Darker red on hover */
+}
+
+input[type="text"] {
+  width: calc(100% - 20px); /* Adjust for padding */
+  border: solid 1px #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.fa-trash {
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+}
+
+/* Hover effect for trash icon */
+li:hover .fa-trash {
+  opacity: 1;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
